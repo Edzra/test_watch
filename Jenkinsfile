@@ -4,7 +4,7 @@ pipeline {
     }
 
   environment {
-    REGISTRY = 'registry.dockingideas.me'
+    REGISTRY = 'registry.dockingideas.me/v2/'
     IMAGE_NAME = 'mock'
     CREDENTIALS_ID = 'nexus-docker-registry'  // Jenkins credential (username/password for registry)
   }
