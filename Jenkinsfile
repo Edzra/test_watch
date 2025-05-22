@@ -29,6 +29,7 @@ pipeline {
 
           docker.withRegistry("https://${REGISTRY}", CREDENTIALS_ID) {
             dockerImage.push(tag)
+            dockerImage.push('latest')
           }
         }
       }
