@@ -6,7 +6,7 @@ pipeline {
   environment {
     REGISTRY = 'registry.dockingideas.me'
     IMAGE_NAME = 'mock'
-    CREDENTIALS_ID = 'my-docker-credentials'  // Jenkins credential (username/password for registry)
+    CREDENTIALS_ID = 'nexus-docker-registry'  // Jenkins credential (username/password for registry)
   }
 
   stages {
