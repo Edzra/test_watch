@@ -24,7 +24,7 @@ pipeline {
       }
       steps {
         script {
-          def tag = env.GIT_TAG_NAME
+          def tag = env.TAG_NAME
           echo "Pushing image to registry with tag: ${tag}"
 
           docker.withRegistry("https://${REGISTRY}", CREDENTIALS_ID) {
